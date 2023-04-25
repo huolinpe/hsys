@@ -1,2 +1,1 @@
-# HuRpc
-self-realized rpc system
+# min-sys
