@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"hurpc/hrpc"
+	hrpc "hsys/rpc"
 )
 
-var remote_ip string = "9.134.219.228"
+var remote_ip string = "9.134.*.*"
 var remote_port string = "7080"
 var rs *hrpc.RemoteStream = new(hrpc.RemoteStream)
 

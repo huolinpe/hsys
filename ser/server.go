@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"hurpc/hrpc"
+	hrpc "hsys/rpc"
 )
 
 var listenPort int = 7080
@@ -75,7 +75,6 @@ func main() {
 			agent.Call(&return_val, "getRemoteIp") //服务器触发一次rpc调用
 			log.Printf("rpc get remote ip:%s", return_val)
 		}()
-
 
 		allAgents[remoteIp] = agent
 	}
