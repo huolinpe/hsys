@@ -318,21 +318,6 @@ func (cmd *StatusCmd) readReply(rd *bufio.Reader) (err error) {
 
 	log.Printf("StatusCmd slice:%s", string(b))
 
-	// n, err := replyLen(len(b))
-	// if err != nil {
-	// 	return "", err
-	// }
-
-	// bt := make([]byte, len(b))
-	// _, err = io.ReadFull(rd, bt)
-	// if err != nil {
-	// 	return err
-	// }
-
-	// log.Println("end readReply")
-
-	// cmd.val = string(bt[:len(bt)-2])
-
 	cmd.val = string(b[:len(b)-2])
 	return nil
 }
@@ -354,7 +339,7 @@ func setStringBytes(cmd Cmder) []byte {
 		wrbytes = append(wrbytes, argstring...)
 		wrbytes = append(wrbytes, '\r', '\n')
 	}
-	// _, err := w.Write(w.lenBuf)
+
 	log.Println(string(wrbytes))
 	return wrbytes
 }

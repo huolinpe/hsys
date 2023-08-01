@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	hrpc "hsys/rpc"
+	hrpc "hurpc/rpc"
 )
 
 var listenPort int = 7080

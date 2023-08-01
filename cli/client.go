@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	hrpc "hsys/rpc"
+	hrpc "hurpc/rpc"
 )
 
 var remote_ip string = "9.134.*.*"
